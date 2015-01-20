@@ -24,7 +24,7 @@ public class BitmapUtils {
 
     public static byte[] bitmap2Bytes(Bitmap bitmap, Bitmap.CompressFormat format) {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        bitmap.compress(format, 100, baos);
+        bitmap.compress(format, 60, baos);
         return baos.toByteArray();
     }
 

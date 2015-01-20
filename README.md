@@ -7,3 +7,6 @@ Bitmap Bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.snow);
 
 **所以不同的图片要放在不同的资源文件夹下面**
 Android Developer [screens_support](http://developer.android.com/intl/zh-cn/guide/practices/screens_support.html)
+
+bitmap.compress(format, 100, baos);
+改变中间的值可以压缩图片，但是还是会保留bitmap的信息，比如分辨率等，所以，压缩后重新放入一个bitmap，bitmap的大小是不变的，保存为文件后会改变大小
